@@ -1,42 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom'
 import productsData from './data/products.json'
+import ProductList from './ProductList';
 
 function ProductDetail() {
-    // const productValues = Object.values(productsData.products);
+   
     const { productId } = useParams();
-    const [product, setProduct] = useState(null);
-    const [isLoading, setIsLoading] = useState(true);
-const [error, setError] = useState(null);
+    const item = productsData.products[productId];
 
-useEffect(() => {
-    const productValues = Object.values(productsData.products);
-    // Fetch product data based on productId
-    const fetchProduct = async () => {
-      try {
-        const fetchedProduct = productValues.find((product) => product.id === productId);
-        setProduct(fetchedProduct);
-      } catch (error) {
-        setError(error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-  
-    fetchProduct();
-  }, [productId]); 
+
+
+if(!item) {
+    return <div>
+        Product not found!
+    </div>
+}
 
     return (
 <div>
-{isLoading && <p>Loading product details...</p>}
-    {error && <p>Error loading product: {error.message}</p>}
-      {product && (
-        <>
-          <h2>{product.name}</h2>
-          <p>{product.description}</p>
+  
+          <h2>{item.name}</h2>
+          <p>{item.description}</p>
+          <p>{item.price}</p>
           {/* Display other product details */}
-        </>
-      )}
+     
+     
     </div>
     )
 }

@@ -1,23 +1,36 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route, Switch, useParams, Link } from "react-router-dom";
-import productsData from "./data/products.json";
+import productsData from "./data/products";
 
 
 
 
 function ProductList() {
-// Get the array of product values
-const productValues = Object.values(productsData.products);
+ 
+// const productValues = (productsData.products);
+
+const productValues = productsData.products
+console.log(productValues)
+
 
     return (
+        
         <ul>
-      {productValues.map((product) => (
-        <li key={product.id}>
-          <Link to={`/product/${product.id}`}>{product.name}</Link>
-        </li>
+      {Object.keys(productValues).map(productItem => (
+        <li key={ productItem  }>
+          <Link to={`/product/${ productItem }`}>{productValues[productItem].name}</Link>
+         
+       </li>
       ))}
     </ul>
+
     )
+   
 }
 
+
+
 export default ProductList;
+
+
+
