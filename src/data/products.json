@@ -1,53 +1,53 @@
 {
     "products": {
         "1": {
-            "name": "Product One",
-            "description": "Description for Product One",
+            "name": "Agate",
+            "description": "Find Inner Peace with the Soothing Energy of Agate.",
             "price": "19.99"
         },
         "2": {
-            "name": "Product Two",
-            "description": "Description for Product Two",
+            "name": "Amazonite",
+            "description": "Discover Your Truth with the Soothing Energy of Amazonite",
             "price": "29.99"
         },
         "3": {
-            "name": "Product Three",
-            "description": "Description for Product Three",
+            "name": "Amethyst",
+            "description": "And a little self awareness is a powerful thing.",
             "price": "39.99"
         },
         "4": {
-            "name": "Product Four",
-            "description": "Description for Product Four",
+            "name": "Angel Aura",
+            "description": "Elevate Your Spirit with the Glowing Energy of Angel Aura Quartz!",
             "price": "49.99"
         },
         "5": {
-            "name": "Product Five",
-            "description": "Description for Product Five",
+            "name": "Apatite",
+            "description": "Empower Your Ambition with the Radiant Energy of Apatite!",
             "price": "59.99"
         },
         "6": {
-            "name": "Product Six",
-            "description": "Description for Product Six",
+            "name": "Aventurine",
+            "description": "Harness the Luck and Abundance of Aventurine!",
             "price": "69.99"
         },
         "7": {
-            "name": "Product Seven",
-            "description": "Description for Product Seven",
+            "name": "Calcite",
+            "description": "Empower Your Journey with Calcite - The Stone of New Beginnings",
             "price": "79.99"
         },
         "8": {
-            "name": "Product Eight",
-            "description": "Description for Product Eight",
+            "name": "Carnelian",
+            "description": "Unleash Your Potential with the Vibrant Energy of Carnelian",
             "price": "89.99"
         },
         "9": {
-            "name": "Product Nine",
-            "description": "Description for Product Nine",
+            "name": "Citrine",
+            "description": "Unlock your inner abundance with Citrine, the manifestation stone that helps turn your dreams into realities!",
             "price": "99.99"
         },
         "10": {
-            "name": "Product Ten",
-            "description": "Description for Product Ten",
+            "name": "Fluorite",
+            "description": "Grounded and powerful dark energy absorbing stone",
             "price": "109.99"
         }
     }

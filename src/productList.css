@@ -1,0 +1,16 @@
+li::before {
+    content: "💎";  /* Replace with your chosen emoticon */
+    font-size: 1.2em;
+    margin-right: 5px;
+    
+    
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  h1 {
+    color: aliceblue;
+  }
+
