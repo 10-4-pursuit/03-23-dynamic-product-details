@@ -2,6 +2,9 @@ import React from 'react';
 import { useParams } from 'react-router-dom'
 import productsData from './data/products.json'
 import ProductList from './ProductList';
+import { Link, Switch } from 'react-router-dom';
+import { Tooltip } from 'react-tooltip';
+import './productDetail.css'
 
 function ProductDetail() {
    
@@ -22,8 +25,11 @@ if(!item) {
           <h2>{item.name}</h2>
           <p>{item.description}</p>
           <p>{item.price}</p>
-          {/* Display other product details */}
-     
+        
+
+        
+          <Link to={`/`}>🛖</Link>
+  
      
     </div>
     )
