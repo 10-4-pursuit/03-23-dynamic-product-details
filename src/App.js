@@ -1,25 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
+import productsData from './data/products.json';
+import ProductDetail from './ProductDetail';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
-function App() {
+
+const Products = () => {
+  const productsArray = Object.values(productsData.products);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <ul>
+        {productsArray.map((product) => (
+            <li key={product.name}>
+                <Link to={`/product/${product.name}`}>{product.name}</Link>
+            </li>
+      ))}
+      </ul>
     </div>
   );
 }
 
-export default App;
+
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path='/' element={<Products/>} />
+        <Route path='/product/:productId' element={<ProductDetail/>} />
+      </Routes>
+    </Router>
+
+  )
+}
+
+export default App
+
+
+
