@@ -70,7 +70,7 @@ Each product is an object with properties like `name`, `description`, and `price
 1. **Commit Your Changes**:
    - After completing the exercise, ensure all your changes are saved.
    - Run `git add .` to stage your changes.
-   - Run `git commit -m "Completed Dynamic Product Details Page exercise"` to commit your changes.
+   - Run  to commit your changes.`git commit -m "Completed Dynamic Product Details Page exercise"`
 
 2. **Push to Your Fork**:
    - Run `git push` to push your commits to your forked repository on GitHub.
